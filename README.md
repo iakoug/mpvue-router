@@ -3,8 +3,10 @@ _为了方便个人使用 这里是一波在 `mpvue-router-patch` 和 `mpvue-rou
   - 更改 `mpvue-router-patch-interceptor` 调用方式
   - 页面堆栈溢出处理
   - 其他细节调整等
-> https://blog.csdn.net/mate_ge/article/details/81197348
-> https://github.com/F-loat/mpvue-router-patch
+
+  > https://blog.csdn.net/mate_ge/article/details/81197348
+
+  > https://github.com/F-loat/mpvue-router-patch
 
 ### use
 
