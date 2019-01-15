@@ -1,5 +1,7 @@
-import { stringifyQuery } from './src/query'
-import { getPagesList } from '@lib/util/util'
+import { stringifyQuery } from './lib/query'
+
+// 查看微信小程序页面堆栈
+const getPagesList = () => getCurrentPages()
 
 // bug
 const throttle = (fn, time = 500) => {
