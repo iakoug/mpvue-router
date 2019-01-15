@@ -1,3 +1,7 @@
+### Error
+
+当前直接使用若使用mpvue-entry会在生成dist目录中报错找不到router，若是在拦截器中将router进行挂载则正常使用（不过这样就没法抽离路由和拦截器之间的藕合）
+
 ### mpvue-router
 _为了方便个人使用 这里是一波在 `mpvue-router-patch` 和 `mpvue-router-patch-interceptor` 基础上简单修改糅合在一起_
   - 更改 `mpvue-router-patch-interceptor` 调用方式
