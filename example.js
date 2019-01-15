@@ -6,9 +6,10 @@
  * to 跳转路由
  */
 
-import Vue from 'vue'
+import Vue from 'mpvue'
 
-import router from './lib/interceptor'
+import router from './src'
+import interceptor from './lib/interceptor'
 
 const interceptorConfig = {
   triggerAll(config, to) {
@@ -31,4 +32,7 @@ const interceptorConfig = {
   }
 }
 
-Vue.use(router, interceptorConfig)
+// 不使用拦截器
+// Vue.use(router)
+// use interceptor
+Vue.use(router, interceptor, interceptorConfig)

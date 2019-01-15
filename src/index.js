@@ -1,4 +1,4 @@
-import { stringifyQuery } from './lib/query'
+import { stringifyQuery } from './utils'
 
 // 查看微信小程序页面堆栈
 const getPagesList = () => getCurrentPages()
@@ -131,7 +131,7 @@ export function back() {
 }
 
 export default {
-  install(Vue) {
+  install(Vue, interceptor, config) {
     if (this.installed) return
 
     this.installed = true
@@ -172,5 +172,7 @@ export default {
     Object.defineProperty(Vue.prototype, '$router', $router)
 
     Object.defineProperty(Vue.prototype, '$route', $route)
+
+    if (interceptor) Vue.use(interceptor, config)
   }
 }
